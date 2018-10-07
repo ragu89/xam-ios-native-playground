@@ -14,7 +14,21 @@ namespace StoryboardPlayground
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
+
+            nameTextField.ShouldReturn += NameTextField_ShouldReturn;
+            nameTextField.EditingDidEnd += (sender, e) => mealNameLabel.Text = nameTextField.Text;
+        }
+
+        bool NameTextField_ShouldReturn(UITextField textField)
+        {
+            textField.ResignFirstResponder();
+            return true;
+        }
+
+
+        partial void SetDefaultLabelText(UIButton sender)
+        {
+            mealNameLabel.Text = "Default text";
         }
 
         public override void DidReceiveMemoryWarning()
