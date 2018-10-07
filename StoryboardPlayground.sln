@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryboardPlayground", "StoryboardPlayground\StoryboardPlayground.csproj", "{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Release|iPhone.Build.0 = Release|iPhone
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{9B7C5AE7-3AD2-4357-B66E-78A9ECAE45AF}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
