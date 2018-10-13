@@ -38,12 +38,6 @@ namespace StoryboardPlayground
             PresentViewController(imagePickerController, true, null);
         }
 
-
-        partial void SetDefaultLabelText(UIButton sender)
-        {
-            mealNameLabel.Text = "Default text";
-        }
-
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
