@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Diagnostics;
+using Foundation;
 using UIKit;
 
 namespace StoryboardPlayground
@@ -25,6 +26,18 @@ namespace StoryboardPlayground
             return true;
         }
 
+        partial void SelectImageFromPhotoLibrary(UITapGestureRecognizer sender)
+        {
+            nameTextField.ResignFirstResponder();
+
+            var imagePickerController = new UIImagePickerController();
+            imagePickerController.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
+            imagePickerController.Canceled += (s, e) => (s as UIImagePickerController).DismissViewController(true, null);
+            imagePickerController.FinishedPickingMedia += ImagePickerController_FinishedPickingMedia;
+
+            PresentViewController(imagePickerController, true, null);
+        }
+
 
         partial void SetDefaultLabelText(UIButton sender)
         {
@@ -36,5 +49,22 @@ namespace StoryboardPlayground
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
+
+        void ImagePickerController_FinishedPickingMedia(object sender, UIImagePickerMediaPickedEventArgs e)
+        {
+            var originalImg = new NSString("UIImagePickerControllerOriginalImage");
+            var selectedImage = e.Info[originalImg] as UIImage;
+            if(selectedImage is null)
+            {
+                Debug.WriteLine($"Expected a dictionary containing an image, but was provided the following : {e.Info}");
+            }
+            else
+            {
+                photoImageView.Image = selectedImage;
+            }
+
+            DismissViewController(true, null);
+        }
+
     }
 }
