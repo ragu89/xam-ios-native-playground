@@ -88,10 +88,19 @@
     <ImageAsset Include="Assets.xcassets\Contents.json" />
     <ImageAsset Include="Assets.xcassets\defaultPhoto.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\defaultPhoto.imageset\automne01.jpg" />
+    <ImageAsset Include="Assets.xcassets\emptyStar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\filledStar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\highlightedStar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\emptyStar.imageset\emptyStar.png" />
+    <ImageAsset Include="Assets.xcassets\filledStar.imageset\filledStar.png" />
+    <ImageAsset Include="Assets.xcassets\highlightedStar.imageset\highlightedStar.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Assets.xcassets\defaultPhoto.imageset\" />
+    <Folder Include="Assets.xcassets\emptyStar.imageset\" />
+    <Folder Include="Assets.xcassets\filledStar.imageset\" />
+    <Folder Include="Assets.xcassets\highlightedStar.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

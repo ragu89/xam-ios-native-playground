@@ -52,7 +52,7 @@
                                             <outletCollection property="gestureRecognizers" destination="jQl-a7-YKN" appends="YES" id="4qY-CJ-d2u"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="841-Qx-GUa" customClass="RatingControl">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="841-Qx-GUa" customClass="RatingControl">
                                         <rect key="frame" x="0.0" y="432.5" width="200" height="110"/>
                                         <color key="backgroundColor" red="1" green="0.97850002039999995" blue="0.3016478239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </stackView>
