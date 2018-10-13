@@ -20,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8o8-bM-XHi">
-                                <rect key="frame" x="16" y="40" width="343" height="424.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8o8-bM-XHi">
+                                <rect key="frame" x="16" y="40" width="343" height="542.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbW-5H-xV8">
                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
@@ -52,6 +52,10 @@
                                             <outletCollection property="gestureRecognizers" destination="jQl-a7-YKN" appends="YES" id="4qY-CJ-d2u"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="841-Qx-GUa" customClass="RatingControl">
+                                        <rect key="frame" x="0.0" y="432.5" width="200" height="110"/>
+                                        <color key="backgroundColor" red="1" green="0.97850002039999995" blue="0.3016478239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="KFO-Zy-HQW" secondAttribute="trailing" id="7uA-lg-O9R"/>
@@ -82,6 +86,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="defaultPhoto" width="16" height="16"/>
+        <image name="defaultPhoto" width="246.72611999511719" height="185"/>
     </resources>
 </document>
